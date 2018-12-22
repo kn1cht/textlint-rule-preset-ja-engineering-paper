@@ -1,0 +1,42 @@
+{
+  "name": "textlint-rule-preset-ja-engineering-paper",
+  "description": "textlint rule preset for Japanese academic papers of enginering",
+  "version": "0.1.0",
+  "keywords": [
+    "textlint",
+    "textlintrule",
+    "japanese"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kn1cht/textlint-rule-preset-ja-engineering-paper"
+  },
+  "author": "kn1cht",
+  "license": "MIT",
+  "email": "16277200+kn1cht@users.noreply.github.com",
+  "homepage": "https://github.com/kn1cht/textlint-rule-preset-ja-engineering-paper",
+  "bugs": {
+    "url": "https://github.com/kn1cht/textlint-rule-preset-ja-engineering-paper/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "textlint-scripts": "^2.1.0"
+  },
+  "dependencies": {
+    "match-index": "^1.0.1",
+    "regx": "^1.0.4",
+    "textlint-rule-helper": "^2.0.1"
+  }
+}
