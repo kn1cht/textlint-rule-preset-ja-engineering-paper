@@ -1,4 +1,4 @@
-# textlint-rule-preset-ja-engineering-paper [![textlint rule](https://img.shields.io/badge/textlint-fixable-green.svg?style=social)](https://textlint.github.io/)
+# textlint-rule-preset-ja-engineering-paper [![Build Status](https://travis-ci.com/kn1cht/textlint-rule-preset-ja-technical-writing.svg?branch=master)](https://travis-ci.com/kn1cht/textlint-rule-preset-ja-technical-writing) [![textlint rule](https://img.shields.io/badge/textlint-fixable-green.svg?style=social)](https://textlint.github.io/)
 
 日本語の工学系論文のための[textlint](https://textlint.github.io/)ルールプリセット
 
@@ -58,4 +58,4 @@ Test textlint rule by [textlint-tester](https://github.com/textlint/textlint-tes
 
 ## License
 
-MIT
+[MIT](LICENSE)
