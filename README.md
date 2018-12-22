@@ -1,4 +1,5 @@
-# textlint-rule-preset-ja-engineering-paper [![Build Status](https://travis-ci.com/kn1cht/textlint-rule-preset-ja-technical-writing.svg?branch=master)](https://travis-ci.com/kn1cht/textlint-rule-preset-ja-technical-writing) [![textlint rule](https://img.shields.io/badge/textlint-fixable-green.svg?style=social)](https://textlint.github.io/)
+# textlint-rule-preset-ja-engineering-paper
+[![npm version](https://badge.fury.io/js/textlint-rule-preset-ja-engineering-paper.svg)](https://badge.fury.io/js/textlint-rule-preset-ja-engineering-paper) [![Build Status](https://travis-ci.com/kn1cht/textlint-rule-preset-ja-technical-writing.svg?branch=master)](https://travis-ci.com/kn1cht/textlint-rule-preset-ja-technical-writing) [![Maintainability](https://api.codeclimate.com/v1/badges/118fd80dbb55df8536e0/maintainability)](https://codeclimate.com/github/kn1cht/textlint-rule-preset-ja-engineering-paper/maintainability) [![textlint rule](https://img.shields.io/badge/textlint-fixable-green.svg?style=social)](https://textlint.github.io/)
 
 日本語の工学系論文のための[textlint](https://textlint.github.io/)ルールプリセット
 
