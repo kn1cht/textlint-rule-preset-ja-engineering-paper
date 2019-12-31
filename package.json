@@ -37,6 +37,7 @@
   "dependencies": {
     "match-index": "^1.0.1",
     "regx": "^1.0.4",
-    "textlint-rule-helper": "^2.0.1"
+    "textlint-rule-helper": "^2.0.1",
+    "textlint-rule-use-si-units": "^1.0.0"
   }
 }
