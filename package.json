@@ -1,7 +1,7 @@
 {
   "name": "textlint-rule-preset-ja-engineering-paper",
   "description": "textlint rule preset for Japanese academic papers of enginering",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [
     "textlint",
     "textlintrule",
