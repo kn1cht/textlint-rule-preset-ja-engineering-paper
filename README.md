@@ -12,7 +12,7 @@ $ npm i textlint-rule-preset-ja-engineering-paper
 
 ## Usage
 
-Via `.textlintrc`(Recommended)
+### Via `.textlintrc`(Recommended)
 
 ```json
 {
@@ -22,24 +22,79 @@ Via `.textlintrc`(Recommended)
 }
 ```
 
-Via CLI
+### Via CLI
 
 ```bash
 $ textlint --preset preset-ja-engineering-paper README.md
 ```
 
-## Rules
-### unify-kuten-and-touten
+### 他のpresetとの併用
+より広範な文章向けの`preset-japanese`・`preset-ja-technical-writing`・`preset-jtf-style`・`preset-ja-spacing`との併用をお勧めします。
+ただし、**句読点をチェックするルール**と競合する場合があります。`.textlintrc`などを使い、適宜無効化してください。
 
+`.textlintrc`の例
+```json
+{
+  "plugins": [],
+  "rules": {
+    "preset-ja-engineering-paper": true,
+    "preset-ja-spacing": true,
+    "preset-ja-technical-writing": {
+      "ja-no-mixed-period": {
+        "periodMark": "．"
+      },
+      "max-kanji-continuous-len": {
+        max: 8,
+        allow: [
+          "日本機械学会論文集"
+        ]
+      },
+    },
+    "preset-japanese": true,
+    "preset-jtf-style": {
+      "1.2.1.句点(。)と読点(、)": false,
+      "1.2.2.ピリオド(.)とカンマ(,)": false,
+      "4.1.3.ピリオド(.)、カンマ(,)": false
+    },
+  }
+}
+```
+
+## Rules
+
+### [textlint-rule-ja-hiragana-fukushi](https://github.com/lostandfound/textlint-rule-ja-hiragana-fukushi)
+漢字よりもひらがなで表記したほうが読みやすい副詞
+
+### [textlint-rule-ja-hiragana-keishikimeishi](https://github.com/lostandfound/textlint-rule-ja-hiragana-keishikimeishi)
+漢字よりもひらがなで表記したほうが読みやすい形式名詞
+
+### [textlint-rule-ja-hiragana-hojodoushi](https://github.com/lostandfound/textlint-rule-ja-hiragana-hojodoushi)
+漢字よりもひらがなで表記したほうが読みやすい補助動詞
+
+### [@textlint-ja/textlint-rule-no-synonyms](https://github.com/textlint-ja/textlint-rule-no-synonyms)
+文章中の同義語の表記ゆれをチェックする
+
+### [textlint-rule-prh](https://github.com/textlint-rule/textlint-rule-prh)
+辞書ベースのチェック
+
+辞書にはデフォルトの`[WEB+DB_PRESS.yml](https://github.com/prh/rules/blob/master/media/WEB%2BDB_PRESS.yml)`を使用しています。
+
+### unify-kuten-and-touten
 - （「[preset-jtf-style/1.2.1. 句点(。)と読点(、)](https://github.com/textlint-ja/textlint-rule-preset-JTF-style/blob/master/src/1.2.1.js)」の改変ルール）
 - 工学系の論文などを対象に、句読点を統一します。
 - デフォルトは日本機械学会論文集が指定している「．」（全角ピリオド）と「，」（全角カンマ）です。
     - これらはoptionで変更できます。
-- 仕様上、句読点をチェックするルールと矛盾する場合があります。
-    - preset-jtf-style/1.2.1.句点(。)と読点(、)・同1.2.2・同4.1.3などです。
-    - これらのルールを使用している場合は、オプションで無効化してください。
+- TODO: 英語のアブストラクトのみ、半角記号を使う場合などの対処
 
-- TODO: 英語のアブストラクトのみ半角記号を使う場合など
+### [textlint-rule-use-si-units](https://github.com/kn1cht/textlint-rule-use-si-units)
+SI単位系の単位以外の使用を禁止する
+
+## 参考資料（全て2020年1月5日閲覧）
+- 後藤祐一．[卒業論文・修士論文自己チェックリスト](https://researchmap.jp/mu1bnkmnz-16072/?action=multidatabase_action_main_filedownload&download_flag=1&upload_id=16578&metadata_id=9287)．2010．
+- 奥村曉．[修士論文や夏の学校の集録や学振申請書を書く皆さんへ (書き方、注意点、心得) - 宇宙線実験の覚え書き](http://oxon.hatenablog.com/entry/20130615/1371228320)．2013．
+- 玉木徹．[卒論・修論チェックリスト - Qiita](https://qiita.com/tttamaki/items/f553e4cb9f4f08cc8872)．2017．
+- 伊藤貴之．[はじめての論文執筆](http://itolab.is.ocha.ac.jp/~itot/message/ItolabWriting2018.pdf)．2019．
+
 
 ## Develop
 
