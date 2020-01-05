@@ -1,14 +1,17 @@
 // LICENSE : MIT
 'use strict';
+
+
+const {moduleInterop} = require("@textlint/module-interop");
 module.exports = {
     rules: {
-        'ja-hiragana-fukushi': require('textlint-rule-ja-hiragana-fukushi'),
-        'ja-hiragana-keishikimeishi': require('textlint-rule-ja-hiragana-keishikimeishi'),
-        'ja-hiragana-hojodoushi': require('textlint-rule-ja-hiragana-hojodoushi'),
-        'no-synonyms': require('@textlint-ja/textlint-rule-no-synonyms'),
-        'prh': require('textlint-rule-prh'),
+        'ja-hiragana-fukushi': moduleInterop(require('textlint-rule-ja-hiragana-fukushi')),
+        'ja-hiragana-keishikimeishi': moduleInterop(require('textlint-rule-ja-hiragana-keishikimeishi')),
+        'ja-hiragana-hojodoushi': moduleInterop(require('textlint-rule-ja-hiragana-hojodoushi')),
+        'no-synonyms': moduleInterop(require('@textlint-ja/textlint-rule-no-synonyms')),
+        'prh': moduleInterop(require('textlint-rule-prh')),
         'unify-kuten-and-touten': require('./unify-kuten-and-touten.js'),
-        'use-si-units': require('textlint-rule-use-si-units'),
+        'use-si-units': moduleInterop(require('textlint-rule-use-si-units')),
     },
     rulesConfig: {
         'ja-hiragana-fukushi': true,

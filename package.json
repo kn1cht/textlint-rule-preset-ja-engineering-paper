@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@textlint-ja/textlint-rule-no-synonyms": "^1.0.2",
+    "@textlint/module-interop": "^1.0.2",
     "match-index": "^1.0.1",
     "regx": "^1.0.4",
     "sudachi-synonyms-dictionary": "^4.1.0",
