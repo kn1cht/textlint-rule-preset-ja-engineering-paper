@@ -39,7 +39,7 @@
     "@textlint/module-interop": "^1.0.2",
     "match-index": "^1.0.1",
     "regx": "^1.0.4",
-    "sudachi-synonyms-dictionary": "^4.1.0",
+    "sudachi-synonyms-dictionary": "^5.0.0",
     "textlint-rule-helper": "^2.0.1",
     "textlint-rule-ja-hiragana-fukushi": "^1.2.0",
     "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",
