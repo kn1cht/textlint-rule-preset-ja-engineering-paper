@@ -20,7 +20,7 @@ module.exports = {
         'no-synonyms': true,
         'prh': {
             'rulePaths': [
-                'node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml'
+                'node_modules/textlint-rule-preset-ja-engineering-paper/src/dict/prh-rules.yml'
             ]
         },
         'unify-kuten-and-touten': true,

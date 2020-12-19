@@ -1,0 +1,76 @@
+# Rules for WEB+DB PRESS
+meta:
+  rules:   https://github.com/prh/rules
+version: 1
+rules:
+  # http://itolab.is.ocha.ac.jp/~itot/message/ItolabWriting2018.pdf 2.5 あえて平仮名を使う単語
+  - expected: でき$1
+    pattern: /出来([あかがのをは過す損ずなまるたれてそ])/
+  - expected: なこと
+    pattern: な事
+  - expected: なところ
+    pattern: な所
+  - expected: ほとんど
+    pattern: 殆ど
+  - expected: もとに
+    pattern: 基に
+  - expected: どうし
+    pattern: 同士
+  - expected: または
+    pattern: 又は
+  - expected: さら$1
+    pattern: /(?<!変)更(に|なる)/
+    specs:
+      - from: 更なる
+        to:   さらなる
+      - from: 変更に
+        to:   変更に
+  - expected: したがって
+    pattern: 従って
+  - expected: あげる
+    pattern: 挙げる
+  # http://www.aise.ics.saitama-u.ac.jp/~gotoh/Download/CheckListForTheses-ja.pdf 1.2 表紙
+  - expected: 教員
+    pattern: 教官
+  - expected: 准教授
+    pattern: 助教授
+  # https://oxon.hatenablog.com/entry/20130615/1371228320 2.9 記号
+  - expected: から
+    pattern: ～
+  # https://next49.hatenadiary.jp/entry/20120103/p2 論文に死んでも書いてはいけない言葉３０（後半のネタ枠以外）
+  - expected: ''
+    pattern:
+      - とても
+      - すごく
+      - 非常に
+      - 極めて
+    specs:
+      - from: とても多い
+        to:   多い
+  - expected: ''
+    pattern:
+      - だいたい
+      - ほぼ
+      - おおよそ
+  - expected: したがって
+    pattern: だから
+  - expected: しかし
+    pattern:
+      - でも
+      - だけど
+      - けれど
+      - けど
+  - expected: いかなる手段を用いても
+    pattern:
+      - どうやっても
+      - どうしても
+  - expected: と考えられる
+    pattern: /と思(う|われる)/
+  - expected: 可能性がある
+    pattern: かもしれない
+  - expected: と推測される
+    pattern: と感じる
+  - expected: 重要である
+    pattern: おもしろい
+  - expected: 多く
+    pattern: いっぱい
