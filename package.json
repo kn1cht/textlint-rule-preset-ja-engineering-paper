@@ -35,12 +35,12 @@
     "textlint-scripts": "^3.0.0"
   },
   "dependencies": {
-    "@textlint-ja/textlint-rule-no-synonyms": "^1.0.2",
-    "@textlint/module-interop": "^1.0.2",
-    "match-index": "^1.0.1",
+    "@textlint-ja/textlint-rule-no-synonyms": "^1.1.0",
+    "@textlint/module-interop": "^1.1.4",
+    "match-index": "^1.0.3",
     "regx": "^1.0.4",
-    "sudachi-synonyms-dictionary": "^5.0.0",
-    "textlint-rule-helper": "^2.0.1",
+    "sudachi-synonyms-dictionary": "^6.0.0",
+    "textlint-rule-helper": "^2.1.1",
     "textlint-rule-ja-hiragana-fukushi": "^1.2.0",
     "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",
     "textlint-rule-ja-hiragana-keishikimeishi": "^1.0.2",

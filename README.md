@@ -77,7 +77,7 @@ $ textlint --preset preset-ja-engineering-paper README.md
 ### [textlint-rule-prh](https://github.com/textlint-rule/textlint-rule-prh)
 辞書ベースのチェック
 
-辞書にはデフォルトの`[WEB+DB_PRESS.yml](https://github.com/prh/rules/blob/master/media/WEB%2BDB_PRESS.yml)`を使用しています。
+辞書には論文にそぐわない表現をチェックするための設定を収録しています。
 
 ### unify-kuten-and-touten
 - （「[preset-jtf-style/1.2.1. 句点(。)と読点(、)](https://github.com/textlint-ja/textlint-rule-preset-JTF-style/blob/master/src/1.2.1.js)」の改変ルール）
@@ -90,7 +90,8 @@ $ textlint --preset preset-ja-engineering-paper README.md
 SI単位系の単位以外の使用を禁止する
 
 ## 参考資料（全て2020年1月5日閲覧）
-- 後藤祐一．[卒業論文・修士論文自己チェックリスト](https://researchmap.jp/mu1bnkmnz-16072/?action=multidatabase_action_main_filedownload&download_flag=1&upload_id=16578&metadata_id=9287)．2010．
+- 後藤祐一．[卒業論文・修士論文自己チェックリスト](http://www.aise.ics.saitama-u.ac.jp/~gotoh/Download/CheckListForTheses-ja.pdf)．2010．
+- next49．[リンク：論文に死んでも書いてはいけない言葉３０ - 発声練習](https://next49.hatenadiary.jp/entry/20120103/p2)．2012．
 - 奥村曉．[修士論文や夏の学校の集録や学振申請書を書く皆さんへ (書き方、注意点、心得) - 宇宙線実験の覚え書き](http://oxon.hatenablog.com/entry/20130615/1371228320)．2013．
 - 玉木徹．[卒論・修論チェックリスト - Qiita](https://qiita.com/tttamaki/items/f553e4cb9f4f08cc8872)．2017．
 - 伊藤貴之．[はじめての論文執筆](http://itolab.is.ocha.ac.jp/~itot/message/ItolabWriting2018.pdf)．2019．
