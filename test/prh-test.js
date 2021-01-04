@@ -21,6 +21,7 @@ const testConfig = {
 // ruleName, rule, { valid, invalid }
 tester.run('prh rule file', testConfig, {
   valid: [
+    'なかでも'
   ],
   invalid: [
     {
@@ -33,7 +34,15 @@ tester.run('prh rule file', testConfig, {
       text: 'とても多い',
       errors: [
         {
-          message: 'とても => '
+          message: 'とても => \n数値を示すなど客観的な表現に置き換えてください．'
+        },
+      ]
+    },
+    {
+      text: 'でも，',
+      errors: [
+        {
+          message: 'でも => しかし'
         },
       ]
     },

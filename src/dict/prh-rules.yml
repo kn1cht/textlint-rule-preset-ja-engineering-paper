@@ -44,6 +44,7 @@ rules:
       - すごく
       - 非常に
       - 極めて
+    prh: 数値を示すなど客観的な表現に置き換えてください．
     specs:
       - from: とても多い
         to:   多い
@@ -52,14 +53,16 @@ rules:
       - だいたい
       - ほぼ
       - おおよそ
+    prh: 数値を示すなど客観的な表現に置き換えてください．
   - expected: したがって
     pattern: だから
   - expected: しかし
-    pattern:
-      - でも
-      - だけど
-      - けれど
-      - けど
+    pattern: /(?<=^| |．|。)(でも|だけど|けれど|けど)/
+    specs:
+      - from: でも，
+        to:   しかし，
+      - from: なかでも
+        to:   なかでも
   - expected: いかなる手段を用いても
     pattern:
       - どうやっても
@@ -74,3 +77,29 @@ rules:
     pattern: おもしろい
   - expected: 多く
     pattern: いっぱい
+  # https://takehikom.hateblo.jp/entry/20130807/1375821976 被験者ではなく実験参加者と書こう
+  - expected: 実験参加者
+    pattern: /被験者(?![内間])/
+    specs:
+      - from: 被験者20名
+        to:   実験参加者20名
+      - from: 被験者内計画
+        to:   被験者内計画
+  # 文字の連続
+  - expected: を
+    pattern:  /をを/
+  - expected: に
+    pattern:  /にに/
+  - expected: が
+    pattern:  /がが/
+  - expected: する
+    pattern:  /するする/
+  # 略語の禁止
+  - expected: スマートフォン
+    pattern:  /スマフォ|スマホ/
+  - expected: 卒業論文
+    pattern:  卒論
+  - expected: 修士論文
+    pattern:  修論
+  - expected: 博士論文
+    pattern:  博論
