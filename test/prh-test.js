@@ -21,7 +21,8 @@ const testConfig = {
 // ruleName, rule, { valid, invalid }
 tester.run('prh rule file', testConfig, {
   valid: [
-    'なかでも'
+    'なかでも',
+    '右辺を展開すると恒等的に1だからである．'
   ],
   invalid: [
     {
@@ -43,6 +44,14 @@ tester.run('prh rule file', testConfig, {
       errors: [
         {
           message: 'でも => しかし'
+        },
+      ]
+    },
+    {
+      text: 'だから，AはBである．',
+      errors: [
+        {
+          message: 'だから => したがって'
         },
       ]
     },

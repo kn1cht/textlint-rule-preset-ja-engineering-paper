@@ -55,7 +55,7 @@ rules:
       - おおよそ
     prh: 数値を示すなど客観的な表現に置き換えてください．
   - expected: したがって
-    pattern: だから
+    pattern: /(?<=^| |．|。)(だから)/
   - expected: しかし
     pattern: /(?<=^| |．|。)(でも|だけど|けれど|けど)/
     specs:
