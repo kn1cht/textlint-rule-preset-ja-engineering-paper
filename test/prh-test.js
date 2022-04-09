@@ -22,7 +22,8 @@ const testConfig = {
 tester.run('prh rule file', testConfig, {
   valid: [
     'なかでも',
-    '右辺を展開すると恒等的に1だからである．'
+    '右辺を展開すると恒等的に1だからである．',
+    'ここでの記号は慣例に従っている．',
   ],
   invalid: [
     {

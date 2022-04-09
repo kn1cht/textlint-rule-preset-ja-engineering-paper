@@ -26,7 +26,7 @@ rules:
       - from: 変更に
         to:   変更に
   - expected: したがって
-    pattern: 従って
+    pattern: /(?<=^| |．|。)(従って)/
   - expected: あげる
     pattern: 挙げる
   # http://www.aise.ics.saitama-u.ac.jp/~gotoh/Download/CheckListForTheses-ja.pdf 1.2 表紙
