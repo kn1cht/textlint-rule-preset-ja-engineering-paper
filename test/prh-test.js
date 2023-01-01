@@ -1,5 +1,5 @@
 'use strict';
-const TextLintTester = require('textlint-tester');
+import TextLintTester from "textlint-tester";
 const tester = new TextLintTester();
 
 const testConfig = {
