@@ -1,5 +1,5 @@
 'use strict';
-import TextLintTester from "textlint-tester";
+const TextLintTester = require("textlint-tester").default || require("textlint-tester");
 const tester = new TextLintTester();
 
 const testConfig = {
@@ -8,7 +8,7 @@ const testConfig = {
   rules: [
     {
       ruleId: 'prh',
-      rule: require('textlint-rule-prh'),
+      rule: require('textlint-rule-prh').default || require('textlint-rule-prh'),
       options: {
         'rulePaths': [
           './src/dict/prh-rules.yml'

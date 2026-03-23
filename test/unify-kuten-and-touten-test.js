@@ -1,5 +1,5 @@
 'use strict';
-import TextLintTester from "textlint-tester";
+const TextLintTester = require("textlint-tester").default || require("textlint-tester");
 const tester = new TextLintTester();
 // rule
 const rule = require('../src/unify-kuten-and-touten');
