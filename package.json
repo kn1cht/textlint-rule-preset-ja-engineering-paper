@@ -32,19 +32,19 @@
     "test": "test"
   },
   "devDependencies": {
-    "textlint-scripts": "^12.3.1"
+    "textlint-scripts": "^15.5.2"
   },
   "dependencies": {
-    "@textlint-ja/textlint-rule-no-synonyms": "^1.1.0",
-    "@textlint/module-interop": "^1.1.4",
+    "@textlint-ja/textlint-rule-no-synonyms": "^1.3.0",
+    "@textlint/module-interop": "^15.5.2",
     "match-index": "^1.0.3",
     "regx": "^1.0.4",
-    "sudachi-synonyms-dictionary": "^6.0.0",
-    "textlint-rule-helper": "^2.1.1",
-    "textlint-rule-ja-hiragana-fukushi": "^1.2.0",
-    "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",
-    "textlint-rule-ja-hiragana-keishikimeishi": "^1.0.2",
-    "textlint-rule-prh": "^5.3.0",
-    "textlint-rule-use-si-units": "^1.0.1"
+    "sudachi-synonyms-dictionary": "^17.0.0",
+    "textlint-rule-helper": "^2.5.0",
+    "textlint-rule-ja-hiragana-fukushi": "^1.3.0",
+    "textlint-rule-ja-hiragana-hojodoushi": "^1.1.0",
+    "textlint-rule-ja-hiragana-keishikimeishi": "^1.1.0",
+    "textlint-rule-prh": "^6.1.0",
+    "textlint-rule-use-si-units": "^2.0.0"
   }
 }
